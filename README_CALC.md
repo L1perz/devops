@@ -10,5 +10,3 @@ python -c "from calculator import add, subtract; assert add(2, 3) == 5; assert s
 
 
 Дополнительная документация.
-
-Дополнительная документация.
