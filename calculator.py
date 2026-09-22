@@ -1,0 +1,10 @@
+"""Учебный калькулятор для практической работы по Git."""
+
+
+def add(a, b):
+    return a + b
+
+
+def subtract(a, b):
+    return a - b  # fixed
+

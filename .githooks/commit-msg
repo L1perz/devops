@@ -1,0 +1,11 @@
+#!/bin/sh
+
+commit_msg=$(cat "$1")
+pattern='^(feat|fix|docs|chore|refactor|merge|test|ci|build|perf|style)(\(.+\))?: .+'
+
+if ! printf '%s\n' "$commit_msg" | grep -Eq "$pattern"; then
+  echo 'Ошибка: сообщение не соответствует Conventional Commits.'
+  echo 'Пример: feat: add login'
+  exit 1
+fi
+
